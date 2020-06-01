@@ -4,4 +4,8 @@
     <string name="Login">LOGIN</string>
     <string name="Register">REGISTER</string>
     <string name="submit">SUBMIT</string>
+    <string name="registered">Already registered? Login here</string>
+    <string name="loggedin"> Dont have an account? Register here</string>
+    <string name="home">Profile</string>
+    <string name="books">Books</string>
 </resources>
