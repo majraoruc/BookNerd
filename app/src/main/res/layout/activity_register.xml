@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/bookslogo"
+        android:layout_width="271dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/books" />
+
+    <EditText
+        android:id="@+id/fullname_field"
+        android:layout_width="271dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:hint="Full name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookslogo" />
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_field" />
+
+    <EditText
+        android:id="@+id/city_field"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_field" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="98dp"
+        android:background="#D74B41"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_field" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_field" />
+</androidx.constraintlayout.widget.ConstraintLayout>
