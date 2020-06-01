@@ -24,22 +24,6 @@ public class MainActivity extends AppCompatActivity {
         viewPager=findViewById(R.id.fragment_container);
 
     }
- private void SetUpAdapter(ViewPager viewPager){
-    //ViewPageAdapter viewPageAdapter= new ViewPageAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-    }
-}
-    private BottomNavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener=new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-            switch (item.getItemId()){
-                case R.id.nav_home:
-                    viewPager.setCurrentItem(0);
-                    return true;
-                case R.id.nav_search:
-                    viewPager.setCurrentItem(1);
-                    return true;
-        }
-    }
 
 
 }
