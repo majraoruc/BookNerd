@@ -9,20 +9,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ViewPageAdapter extends FragmentPagerAdapter {
-private List<Fragment> FragmentList=new ArrayList<>();
-    public ViewPageAdapter(@NonNull FragmentManager fm, int behavior){
-        super(fm,behavior);
+    private List<Fragment> fragmentList = new ArrayList<>();
+    public ViewPageAdapter(@NonNull FragmentManager fm, int behavior) {
+        super(fm, behavior);
     }
+
+    public ViewPageAdapter() {
+        super();
+    }
+
+    @NonNull
     @Override
     public Fragment getItem(int position) {
-        return FragmentList.get(position);
+        return fragmentList.get(position);
     }
 
     @Override
     public int getCount() {
-        return FragmentList.size();
+        return fragmentList.size();
     }
+
     public void addFragment(Fragment fragment){
-        FragmentList.add(fragment);
+        fragmentList.add(fragment);
     }
 }
